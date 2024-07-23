@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family:"Bona Nova SC";
+    color: #777;
+   
+}
+
+
+.main-header{
+    background-image: url("images/header.jpg");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    margin-bottom: 30px;
+    height: 200px;
+}
+
+nav ul{
+    margin: 0;
+}
+
+nav li{
+    display: inline;
+}
+
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: .5em;
+}
+
+nav a:hover{
+    background-color: rgba(66, 66, 66, 0.6);
+}
+
+.main-nav{
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255,0.5) ;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.main-nav li{
+    padding: 0 5%;
+}
+
+.artist-name{
+    text-align: center;
+    margin: 0;
+    font-size: 3em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+
+.artist-name-large{
+    font-size: 6em;
+}
+
+.content-section{
+    margin: 1em;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.artist-img{
+    float: left;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer{
+    background-color: #333333d5;
+    padding: 5em 0;
+}
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+.main-footer-container ul{
+    flex-grow: 1;
+
+}
+
+.footer-nav li{
+    padding: 0 .5em;
+    display: inline;
+}
+
+.show-row{
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.row-item{
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.row-date{
+    font-weight: bold;
+    color: #333;
+    width: 15%;
+}
+.show-city{
+    width: 40%;
+}
+.show-arena{
+    width: 25%;
+}
+.custom-btn{
+    max-width: 600px;
+    text-align: center;
+    color: white;
+    border: 1px solid rgb(25, 89, 89);
+    background-color:rgb(94, 140, 140);
+    border-radius: 10%;
+
+}
+
+.shop-item-button{
+    max-width: 500px;
+}
+
+.shop-item {
+    margin: 30px;
+}
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color:rgb(94, 140, 140);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.custom-btn:hover {
+    background-color: rgb(25, 89, 89);
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+
+
+.album-cover{
+    display: block;
+    margin: auto;
+
+}
+
+.songs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; 
+}
+
+.song-item {
+    text-align: center;
+}
+
+.song-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
